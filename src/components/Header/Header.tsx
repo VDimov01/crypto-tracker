@@ -5,9 +5,9 @@ export const Header = () => {
   return (
     <div className="App gradient">
       <nav className="navbar">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/crypto">Crypto</Link>
+        <Link to="/crypto-tracker/">Home</Link>
+        <Link to="/crypto-tracker/about">About</Link>
+        <Link to="/crypto-tracker/crypto">Crypto</Link>
       </nav>
       <h1 className="heading">Welcome to Crypto Tracker</h1>
       <div>

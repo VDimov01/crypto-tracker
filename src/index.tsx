@@ -25,12 +25,12 @@ const router = createBrowserRouter([
         errorElement: <div>404</div>
       },
       {
-        path: '/about',
+        path: '/crypto-tracker/about',
         element: <About />,
         errorElement: <div>404</div>
       },
       {
-        path: '/details/:cryptoId',
+        path: '/crypto-tracker/details/:cryptoId',
         element: <Details />,
       }
     ]
