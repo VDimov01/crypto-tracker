@@ -6,7 +6,7 @@ import Root from './routes/root';
 import { Header } from './components/Header/Header';
 import { Details } from './components/Details/Details';
 import { About } from './components/About/About';
-import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import {createBrowserRouter, RouterProvider, HashRouter as Router} from 'react-router-dom';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -15,12 +15,12 @@ const root = ReactDOM.createRoot(
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/crypto-tracker',
     element: <Header />,
     errorElement: <div>404</div>,
     children: [
       {
-        path: '/',
+        path: '/crypto-tracker',
         element: <Root />,
         errorElement: <div>404</div>
       },
@@ -40,7 +40,9 @@ const router = createBrowserRouter([
 ])
 
 root.render(
+  <Router>
     <RouterProvider router={router} />
+  </Router>
 );
 
 // If you want to start measuring performance in your app, pass a function
