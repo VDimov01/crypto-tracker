@@ -35,7 +35,7 @@ export const Home = ({cryptos, currentPage, itemsPerPage}: HomeProps) => {
               <p>{crypto.name}</p>
               <p>{crypto.symbol}</p>
               <p>{convertPrice(crypto.quotes.USD.price)}</p>
-              <Link to={`/crypto-tracker/details/${crypto.id}`}>Details</Link>
+              <Link to={`/details/${crypto.id}`}>Details</Link>
             </span>
           );
         })

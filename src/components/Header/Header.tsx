@@ -5,9 +5,9 @@ export const Header = () => {
   return (
     <div className="App gradient">
       <nav className="navbar">
-        <Link to="/crypto-tracker/">Home</Link>
-        <Link to="/crypto-tracker/about">About</Link>
-        <Link to="/crypto-tracker/crypto">Crypto</Link>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/search">Crypto</Link>
       </nav>
       <h1 className="heading">Welcome to Crypto Tracker</h1>
       <div>
@@ -16,8 +16,8 @@ export const Header = () => {
       <footer className="footer">
         <div className="footer-logo">Logo</div>
         <nav className="footer-links">
-          <a href="#" className="footer-link">
-            Link 1
+          <a href="https://github.com/VDimov01" target="_blank" className="footer-link">
+            Github
           </a>
           <a href="#" className="footer-link">
             Link 2
