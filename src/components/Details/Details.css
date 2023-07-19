@@ -50,7 +50,7 @@
   
   @media (max-width: 768px) {
     .details-page{
-        height: 100%;
+        height: 100vh;
     }
 
     .crypto-card {
