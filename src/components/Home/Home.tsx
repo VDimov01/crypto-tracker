@@ -25,6 +25,8 @@ export const Home = ({cryptos, currentPage, itemsPerPage}: HomeProps) => {
     const visibleItems = cryptos.slice(startIndex, startIndex + itemsPerPage);
 
     return(
+    <>
+        
         <div className="wrap">
             {
             visibleItems.map((crypto: Crypto) => {
@@ -41,5 +43,6 @@ export const Home = ({cryptos, currentPage, itemsPerPage}: HomeProps) => {
         })
         }
         </div>
+    </>
     );
 }
